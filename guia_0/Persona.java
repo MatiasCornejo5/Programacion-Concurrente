@@ -1,4 +1,5 @@
-public class Persona () { 
+
+public class Persona{
 
     protected String nombre;
     protected String apellido;
@@ -60,7 +61,7 @@ public class Persona () {
 
     @Override
     public String toString() {
-        return nombre.toString()+" "+apellido.toString()+" "+ dni.toString();
+        return nombre.toString() + " " + apellido.toString() + " " + dni.toString();
     }
 
 }

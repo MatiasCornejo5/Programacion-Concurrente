@@ -38,3 +38,4 @@ public class Tecnico extends Empleado {
     protected void setAdicional_titulo(int adicional_titulo) {
         this.adicional_titulo = adicional_titulo;
     }
+}

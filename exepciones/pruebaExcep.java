@@ -12,13 +12,13 @@ class ExcepcionEdad extends Exception {
     public ExcepcionEdad(String arg) {
         super(arg);
     }
-
 }
 
 class ExcepcionRuleta extends Exception {
-    public ExcepcionRuleta(){        
+    public ExcepcionRuleta() {
     }
-    public ExcepcionRuleta(String arg){
+
+    public ExcepcionRuleta(String arg) {
         super(arg);
     }
 }
@@ -36,6 +36,7 @@ public class pruebaExcep {
             e.printStackTrace();
         }
     }
+
     public static void verificarEdad(int edad) throws ExcepcionEdad {
         if (edad >= 18) {
             System.out.println("Es mayor de edad");
@@ -54,30 +55,31 @@ public class pruebaExcep {
         try {
             System.out.println("Ingrese un numero: ");
             numero = sc.nextInt();
-            Random aleatorio= new Random();
-            int n=aleatorio.nextInt(36);
-            verificarNumero(numero,n);
+            Random aleatorio = new Random();
+            int n = aleatorio.nextInt(36);
+            verificarNumero(numero, n);
         } catch (ExcepcionRuleta e) {
             e.printStackTrace();
         }
 
     }
-    public static void verificarNumero(int numero, int aleatorio) throws ExcepcionRuleta{
-        if (numero==aleatorio) {
+
+    public static void verificarNumero(int numero, int aleatorio) throws ExcepcionRuleta {
+        if (numero == aleatorio) {
             System.out.println("FELICITACIONES HA GANADO");
         } else {
-            throw new ExcepcionRuleta("El numero ganador es: <"+aleatorio+">.Lo siento, su numero no ha salido");           
+            throw new ExcepcionRuleta("El numero ganador es: <" + aleatorio + ">.Lo siento, su numero no ha salido");
         }
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        /*menor_deEdad(16);*/
-        String respuesta="si";
+        /* menor_deEdad(16); */
+        String respuesta = "si";
         while (respuesta.equals("si")) {
             ruleta();
             System.out.println("Desea seguir jugando?");
-            respuesta=sc.nextLine();
+            respuesta = sc.nextLine();
         }
     }
 

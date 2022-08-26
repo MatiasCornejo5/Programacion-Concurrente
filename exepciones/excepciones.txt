@@ -24,4 +24,6 @@ Ejercicio 8 de la guia de excepciones
 
 a) Logramos crear una excepcion para el metodo menor_deEdad, el cual lanza la excepcion si la edad ingresa es < 18
 
-b) 
+b) Logramos crear una exepcion para el metodo ruleta, el cual lanza la exepcion si el numero elegido no sale en la ruleta
+
+c)

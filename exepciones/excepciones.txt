@@ -1,10 +1,10 @@
-Ejercicio 6 de la guia de exepciones
+Ejercicio 6 de la guia de excepciones
 
 En primer lugar no deberia haber un throw y un catch ya que estariamos lanzando el error y luego agarrandolo 
 para volver a lanzarlo.
 Deberiamos tener 
 
-Ejercicio 7 de la guia de exepciones
+Ejercicio 7 de la guia de excepciones
 a) El metodo "metodo()" devuelve 44 en la variable valor al final del try, 45 al final del finally (ya que entra si o si)
  y por ultimo devuelve 46 antes del retorno. Luego en el main mostramos por pantalla 46 que es el valor que retorna metodo().
 
@@ -19,3 +19,9 @@ los errores
 d) El metodo "metodo()" devuelve 2 dentro del finally, ya que asigna + 1 la primer linea del try, luego entra al catch (ignorando el throw new IOException ya que esta se encuentra 
 por debajo del error en la linea Integer.parseInT("W") y como el catch solo se ejecuta si hay una IOException sale y entra si o si al finally). Luego en el main 
 falla el try, entra en el catch imprime "Excepcion en metodo()" y muestra la pila de los errores
+
+Ejercicio 8 de la guia de excepciones
+
+a) Logramos crear una excepcion para el metodo menor_deEdad, el cual lanza la excepcion si la edad ingresa es < 18
+
+b) 

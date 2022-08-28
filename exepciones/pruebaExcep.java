@@ -1,3 +1,7 @@
+import java.text.CollationElementIterator;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,6 +23,16 @@ class ExcepcionRuleta extends Exception {
     }
 
     public ExcepcionRuleta(String arg) {
+        super(arg);
+    }
+}
+
+class ExcepcionColeccion extends IndexOutOfBoundsException {
+    public ExcepcionColeccion() {
+        this("Intenta mostrar posiciones inexistentes");
+    }
+
+    public ExcepcionColeccion(String arg) {
         super(arg);
     }
 }
@@ -72,15 +86,62 @@ public class pruebaExcep {
         }
     }
 
+    /*
+     * metodo que ingresa 5 numeros a una coleccion y trata de mostrar 7 valores de
+     * la misma
+     */
+    public static void coleccion_Numeros() {
+        List<Integer> coleccion = new LinkedList<Integer>();
+        Scanner sc = new Scanner(System.in);
+        int num;
+        System.out.println("Ingrese 1er numero");
+        num = sc.nextInt();
+        coleccion.add(num);
+        System.out.println("Ingrese 2do numero");
+        num = sc.nextInt();
+        coleccion.add(num);
+        System.out.println("Ingrese 3er numero");
+        num = sc.nextInt();
+        coleccion.add(num);
+        System.out.println("Ingrese 4to numero");
+        num = sc.nextInt();
+        coleccion.add(num);
+        System.out.println("Ingrese 5to numero");
+        num = sc.nextInt();
+        coleccion.add(num);
+        mostrarColeccion(coleccion);
+    }
+
+    public static void mostrarColeccion(List<Integer> coleccion) {
+        try {
+            for (int i = 0; i < 7; i++) {
+                verficarPosicion(i, coleccion);
+            }
+        } catch (ExcepcionColeccion e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void verficarPosicion(int i, List<Integer> coleccion) {
+        if (i < coleccion.size()) {
+            System.out.println("num: " + coleccion.get(i));
+        } else {
+            throw new ExcepcionColeccion();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         /* menor_deEdad(16); */
         String respuesta = "si";
-        while (respuesta.equals("si")) {
-            ruleta();
-            System.out.println("Desea seguir jugando?");
-            respuesta = sc.nextLine();
-        }
+        /*
+         * while (respuesta.equals("si")) {
+         * ruleta();
+         * System.out.println("Desea seguir jugando?");
+         * respuesta = sc.nextLine();
+         * }
+         */
+        coleccion_Numeros();
     }
 
 }

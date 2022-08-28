@@ -24,6 +24,28 @@ Ejercicio 8 de la guia de excepciones
 
 a) Logramos crear una excepcion para el metodo menor_deEdad, el cual lanza la excepcion si la edad ingresa es < 18
 
-b) Logramos crear una exepcion para el metodo ruleta, el cual lanza la exepcion si el numero elegido no sale en la ruleta
+b) Logramos crear una excepcion para el metodo ruleta, el cual lanza la exepcion si el numero elegido no sale en la ruleta
 
-c)
+c) Logramos crear una excepcion para el metodo coleccion_Numeros, el cual lanza la excepcion cuando se desea mostrar una posicion inexistente de la coleccion
+
+Ejercicio 9 de la guia de excepciones
+    Creacion de la clase excepcionDias
+
+Ejercicio 10 de la guia de excepciones
+    a) Definir e implementar las clases
+
+    b) implementar un metodo que genere una coleccion de productos vendidos. Disparar un excepcion cuando la fecha del producto es menor
+        a la fecha actual
+
+Ejercicio 11 de la guia de excepciones
+    Verdadero o Falso.
+    .) Un bloque try tiene que ser seguido por un catch y un finally. FALSO, no necesariamente tiene que existir un finally
+    .) Si escribe un metodo que podria causar una excepcion chequeada, 
+        debe encerrar el codigo de riesgo en un bloque try/catch.
+    .) Solo las excepciones chequeadas pueden ser capturadas. VERDADERO 
+    .) Si escribe un metodo que declara lanzar una excepcion chequeada por el compilador, se debe tambien 
+        envolver el codigo que lanza la excepcion en un try/catch.
+    .) Un bloque try puede existir por si mismo, sin un bloque catch o un bloque finally. VERDADERO
+    .) Un metodo con un bloque try y un bloque finally, puede opcionalmente declarar la excepcion.
+    .) Las excepciones de runtime deber ser manejadas o declaradas.
+    

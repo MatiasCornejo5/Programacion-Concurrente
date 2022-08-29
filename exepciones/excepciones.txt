@@ -41,11 +41,11 @@ Ejercicio 11 de la guia de excepciones
     Verdadero o Falso.
     .) Un bloque try tiene que ser seguido por un catch y un finally. FALSO, no necesariamente tiene que existir un finally
     .) Si escribe un metodo que podria causar una excepcion chequeada, 
-        debe encerrar el codigo de riesgo en un bloque try/catch.
+        debe encerrar el codigo de riesgo en un bloque try/catch. VERDADERO
     .) Solo las excepciones chequeadas pueden ser capturadas. VERDADERO 
     .) Si escribe un metodo que declara lanzar una excepcion chequeada por el compilador, se debe tambien 
         envolver el codigo que lanza la excepcion en un try/catch.
     .) Un bloque try puede existir por si mismo, sin un bloque catch o un bloque finally. VERDADERO
     .) Un metodo con un bloque try y un bloque finally, puede opcionalmente declarar la excepcion.
-    .) Las excepciones de runtime deber ser manejadas o declaradas.
+    .) Las excepciones de runtime deber ser manejadas o declaradas. DEBE SER MANEJADA NO DECLARADA 
     

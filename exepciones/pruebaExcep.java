@@ -113,7 +113,7 @@ public class pruebaExcep {
 
     public static void mostrarColeccion(List<Integer> coleccion) {
         try {
-            for (int i = 0; i < 7; i++) {
+            for (int i = 0; i < coleccion.size(); i++) {
                 verficarPosicion(i, coleccion);
             }
         } catch (ExcepcionColeccion e) {
@@ -131,16 +131,19 @@ public class pruebaExcep {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        /* menor_deEdad(16); */
+        /* menor_deEdad(18); */
         String respuesta = "si";
+
         /*
          * while (respuesta.equals("si")) {
          * ruleta();
          * System.out.println("Desea seguir jugando?");
          * respuesta = sc.nextLine();
+         * 
          * }
          */
-        coleccion_Numeros();
+
+        coleccion_Numeros(); 
     }
 
 }

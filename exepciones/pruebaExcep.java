@@ -113,7 +113,7 @@ public class pruebaExcep {
 
     public static void mostrarColeccion(List<Integer> coleccion) {
         try {
-            for (int i = 0; i < coleccion.size(); i++) {
+            for (int i = 0; i < 7; i++) {
                 verficarPosicion(i, coleccion);
             }
         } catch (ExcepcionColeccion e) {

@@ -24,3 +24,8 @@ public class Main {
 
 	}
 }
+/*Para mejorarlo deberia poder curar al personaje si es que esta lastimado
+ * caso contrario no hacer nada.
+ * Muestra cruzado los datos, no debe estar bien implementado la sincronizacion
+ * Consultar!!
+ */

@@ -4,9 +4,8 @@ public class testeoRecurso {
         juan.setName("Juan Lopez");
         Cliente_hilo ines = new Cliente_hilo();
         ines.setName("Ines Garcia");
-        ines.start();
         juan.start();
-        
+        ines.start();
         /*Recurso.uso();*/
     }
 }

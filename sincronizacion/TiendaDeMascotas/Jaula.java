@@ -54,15 +54,33 @@ public class Jaula {
 
         return sePuedeUsar;
     }
-    
-    public synchronized void dejarHamaca(String nombre){
+
+    public synchronized void dejarHamaca(String nombre) {
         System.out.println(nombre + " dejo de usar la hamaca.");
-        this.dispHamaca=true;
+        this.dispHamaca = true;
     }
 }
 
 class TiendaDeMascotas {
     public static void main(String[] args) {
+        /*
+         * En una tienda de mascotas están teniendo problemas para tener a todos sus
+         * hámster felices.
+         * Los hámster comparten una jaula en la que hay un plato con comida, una rueda
+         * para hacer
+         * ejercicio, y una hamaca en la que pueden descansar. Todos los hamsters
+         * quieren comer del
+         * plato, correr en la rueda y luego descansar en la hamaca.Pero se encuentran
+         * con el inconveniente de que solo 1 de ellos puede comer del plato, solo uno
+         * puede correr en la
+         * rueda y solo 1 puede descansar en la hamaca.
+         * a) Implemente un programa para simular la situación planteada, en donde todos
+         * los
+         * hámster puedan realizar todas las actividades.
+         * b) Nota: considere que todas las actividades consumen cierto tiempo, por lo
+         * que para
+         * la simulación se sugiere asignar ese tiempo con “sleep()"
+         */
 
         Jaula jaula = new Jaula();
         Hamster hamster1 = new Hamster("Hamster 1", jaula);

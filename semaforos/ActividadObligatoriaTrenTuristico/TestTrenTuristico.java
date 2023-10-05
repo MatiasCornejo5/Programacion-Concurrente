@@ -5,10 +5,11 @@ public class TestTrenTuristico {
         
         TrenTuristico tren = new TrenTuristico();
         ControlTren control = new ControlTren(tren);
+        Ticketera ticketera = new Ticketera();
         PasajeroTren pasajeros [] = new PasajeroTren [10];
     
         for (int i = 0; i < pasajeros.length; i++) { // cargamos el array
-            pasajeros[i] = new PasajeroTren(tren);
+            pasajeros[i] = new PasajeroTren(tren, ticketera);
         }
 
         for (int i = 0; i < pasajeros.length; i++) { // lanzamos threads
@@ -16,6 +17,8 @@ public class TestTrenTuristico {
         }
 
         control.start();
+        
+
     }
 
 }

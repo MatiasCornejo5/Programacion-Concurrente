@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TrenTuisticoTest",
+            "request": "launch",
+            "mainClass": "ActividadObligatoriaTren.TrenTuisticoTest",
+            "projectName": "sincronizacion_3e011dc"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
